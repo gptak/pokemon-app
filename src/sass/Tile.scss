@@ -29,6 +29,12 @@
   }
 }
 
+@media (min-width: 350px) {
+  .tile {
+    min-width: 160px;
+  }
+}
+
 .bug {
   background-color: #c6d16e;
 }
@@ -99,11 +105,3 @@
 .water {
   background-color: #9db7f5;
 }
-
-@media (min-width: 350px) {
-  .tile {
-    min-width: 160px;
-  }
-}
-
-
