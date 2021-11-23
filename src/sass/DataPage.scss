@@ -1,5 +1,4 @@
 .datapage {
-  
   &__card {
     display: flex;
     flex-direction: column;
@@ -8,43 +7,41 @@
     border-radius: 15px;
     margin: 1em;
 
-    &_stats{
-      margin-left: 10em;
-    }
-
-    &_stats_column{
+    &_stats_column {
       background-color: #fff;
-      width: 255px;
+      width: 125px;
       height: 15px;
       border-radius: 4px;
     }
 
-    &_stats_line{
+    &_stats_line {
       height: 15px;
       background-color: #cf302a;
       border-radius: 4px;
     }
 
-    &_title{
+    &_title {
       margin: 1em;
       text-align: center;
     }
 
-    &_images{
-      width: 400px;
-      height: 400px;
+    &_images {
+      width: 200px;
+      height: 200px;
 
-      & img{
+      & img {
         width: 100%;
       }
     }
 
     &_info {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       margin: 1em;
     }
 
-    &_text{
+    &_text {
       & td {
         display: flex;
         flex-direction: column;
@@ -52,29 +49,71 @@
       }
     }
 
-    & th,td{
+    & th,
+    td {
       text-align: right;
-      padding: 0.7em 0.3em ;
+      padding: 0.7em 0.3em;
     }
 
-    &_return{
+    &_return {
       display: flex;
       justify-content: center;
     }
 
-    &_button{
-      background-color: #9e3733;
+    &_button {
+      background-color: darkred;
       border: solid 2px #000000;
       text-decoration: none;
       text-transform: uppercase;
       color: #ffffff;
       border-radius: 5px;
-      padding: 1em 2em;
+      padding: 0.5em 1em;
       margin-top: 1em;
       margin-bottom: 2em;
 
-      &:hover{
+      &:hover {
         background-color: #cf302a;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .datapage {
+    &__card {
+      &_stats {
+        margin-left: 2em;
+      }
+
+      &_stats_column {
+        width: 180px;
+      }
+
+      &_images {
+        width: 400px;
+        height: 400px;
+      }
+
+      &_info {
+        flex-direction: row;
+      }
+
+      &_button {
+        padding: 1em 2em;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .datapage {
+    &__card {
+      &_stats {
+        margin-left: 6em;
+      }
+
+      &_stats_column {
+        width: 250px;
       }
     }
   }
