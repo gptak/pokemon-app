@@ -57,15 +57,11 @@ function Login({ checkCookies }: LoginProps) {
             placeholder="password"
             onChange={handlePasswordInput}
           />
+            {wrongLog ? <div className="login__container_response"><p>Wrong login or password. Please try again.</p></div> : null}
           <button className="login__container_button" type="submit" onClick={handleLogin}>
             Login
           </button>
         </form>
-        {wrongLog ? (
-          <div>
-            <p>Wrong login or password</p>
-          </div>
-        ) : null}
       </div>
     </div>
   );
