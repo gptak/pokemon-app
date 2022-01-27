@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Try app here:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://poke-app-gptak.herokuapp.com/
 
 ## Login and password
 
